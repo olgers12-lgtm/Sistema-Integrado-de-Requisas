@@ -1,0 +1,5 @@
+# Ejemplo de variables de entorno
+# Para Postgres:
+# DATABASE_URL=postgresql://postgres:postgres@localhost:5432/requisas
+DATABASE_URL=sqlite:///./requisas.db
+SECRET_KEY=replace-with-secure-key

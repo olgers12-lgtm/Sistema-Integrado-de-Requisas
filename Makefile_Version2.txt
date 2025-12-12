@@ -1,0 +1,16 @@
+.PHONY: run docker-up test migrate
+
+run:
+	python -m venv .venv || true
+	. .venv/bin/activate && pip install -r requirements.txt
+	streamlit run app.py
+
+docker-up:
+	docker-compose up --build
+
+test:
+	pytest -q
+
+migrate-init:
+	alembic revision --autogenerate -m "initial" || true
+	alembic upgrade head

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+requisas.db
+*.sqlite3
+instance/
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
